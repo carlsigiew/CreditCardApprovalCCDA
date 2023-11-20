@@ -7,7 +7,7 @@
           Tejas Patil  
           Yogen Ghodke  
                 
-### Project Scope and Business Goal:
+## Project Scope and Business Goal:
 
 **Project Scope:**
 The project aims to develop a machine learning model for credit card approval prediction, leveraging Amazon Sagemaker and it's ability to test out multiple models and pick the best one. The focus is on assessing the credit risk of applicants based on historical data and personal information. The goal is to enhance the credit scoring process, balancing transparency and predictive power and create an application that credit card approvers can use to quickly sift through applicants.
@@ -48,3 +48,40 @@ In the financial domain, challenges include regulatory compliance, ethical consi
 
 **KPI’s:**
 Key Performance Indicators (KPIs) will play a crucial role in evaluating the success of the credit scoring model. Metrics such as accuracy, precision, recall, and possibly ROC-AUC will be considered. The choice of KPIs will be aligned with the goals of the financial industry, emphasizing the importance of correctly identifying creditworthy applicants while minimizing the risk of defaults. The KPIs will set the stage for optimizing the models and ensuring they meet industry standards and expectations.
+
+## Phase 2 Deliverable 
+
+**S3 Data Storage:**
+1. Amazon Web Services (AWS) provides a highly scalable and secure solution for object storage known as Amazon S3 (Simple Storage Service). We utilize this service to store our dataset before performing preprocessing and applying transformations.
+
+2. S3 offers significant advantages by enabling the storage and retrieval of large volumes of data at any given time, making it an ideal choice for hosting extensive datasets, including those related to product information.
+
+3. In the realm of S3, data is organized into buckets, each with a unique name within the S3 namespace, ensuring global uniqueness.
+
+4. S3 proves to be versatile for product-focused projects as it accommodates various types of data, ranging from text files to images and metadata.
+
+5. With fine-grained access controls, S3 provides the ability to manage and control access to your information, determining who can interact with the stored data.
+
+6. Versioning and logging are valuable features offered by S3, aiding in the tracking of changes and providing visibility into who has accessed the dataset over time.
+
+7. S3 objects are easily retrievable through unique URLs, simplifying integration with analytical software and machine learning techniques.
+   
+**Data Exploration:**
+
+Athena - We make use of AWS Glue for ETL Transformations
+
+**Pre-processing:**
+
+
+
+**Data Transformations - AWS Glue:**
+
+**AWS Glue ETL Pipeline:**
+
+
+**Visualizations:**
+
+
+**AWS Pipeline:**
+
+![image](https://github.com/carlsigiew/CreditCardApprovalCCDA/assets/25591822/0507f755-30f0-47a0-b5ad-162fb652e61e)
