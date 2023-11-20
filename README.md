@@ -79,9 +79,6 @@ Athena - We make use of AWS Glue for ETL Transformations
 **AWS Glue ETL Pipeline:**
 
 
-**Visualizations:**
-
-
 **AWS Pipeline:**
 
 ![image](https://github.com/carlsigiew/CreditCardApprovalCCDA/assets/25591822/0507f755-30f0-47a0-b5ad-162fb652e61e)
