@@ -115,12 +115,18 @@ The models are evaluated on ROC AUC (Receiver Operating Characteristic Area Unde
 ## Evaluation 
 
 The ROC AUC score for the Logistic Regression model is 0.57 which means the model is moderately accurate at prediction
+![image](https://github.com/carlsigiew/CreditCardApprovalCCDA/assets/25591822/1239e1c5-ac75-4b78-808b-4d37b260301d)
+
 
 The ROC AUC score for the Random Forest Classfier is 0.85 which means the classifier is has high accuracy of prediction
+![image](https://github.com/carlsigiew/CreditCardApprovalCCDA/assets/25591822/7fdb0f63-a6e0-4364-914a-bb3d122c1214)
+
 
 The ROC AUC score for the Gradient Boosting Classifier is 0.87 which means the classifier is has high accuracy of prediction. 
+![image](https://github.com/carlsigiew/CreditCardApprovalCCDA/assets/25591822/bb9a4129-e904-4203-a964-4b11e22d96f1)
 
-The gradient boosting classifer has the highest ROC AUC score of the classifiers used and therefore is the best performing.\
+
+The gradient boosting classifer has the highest ROC AUC score of the classifiers used and therefore is the best performing.
 
 
 ## Conclusion
