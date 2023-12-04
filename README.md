@@ -49,7 +49,7 @@ In the financial domain, challenges include regulatory compliance, ethical consi
 **KPI’s:**
 Key Performance Indicators (KPIs) will play a crucial role in evaluating the success of the credit scoring model. Metrics such as accuracy, precision, recall, and possibly ROC-AUC will be considered. The choice of KPIs will be aligned with the goals of the financial industry, emphasizing the importance of correctly identifying creditworthy applicants while minimizing the risk of defaults. The KPIs will set the stage for optimizing the models and ensuring they meet industry standards and expectations.
 
-## Phase 2 Deliverable 
+# Phase 2 Deliverable 
 
 **S3 Data Storage:**
 1. Amazon Web Services (AWS) provides a highly scalable and secure solution for object storage known as Amazon S3 (Simple Storage Service). We utilize this service to store our dataset before performing preprocessing and applying transformations.
@@ -85,9 +85,9 @@ Athena - We make use of AWS Glue for ETL Transformations
 
 ![image](https://github.com/carlsigiew/CreditCardApprovalCCDA/assets/25591822/0507f755-30f0-47a0-b5ad-162fb652e61e)
 
-## Phase 3 Deliverable 
+# Phase 3 Deliverable 
 
-# Data Modelling
+## Data Modelling
 For data pre processing, we have used AWS SageMaker to first find any missing values. 
 * After this, we convert categorical to numerical variables using label encoding. The columns converted are "CODE_GENDER", "FLAG_OWN_CAR", "FLAG_OWN_REALTY", "NAME_INCOME_TYPE", "NAME_EDUCATION_TYPE", "NAME_FAMILY_STATUS", "NAME_HOUSING_TYPE".
 * We also convert categorical variables in the occupation type column to numerical using a custom numbering format
@@ -99,7 +99,7 @@ For data pre processing, we have used AWS SageMaker to first find any missing va
 * After this, we merge the two files to create one comprehensive dataset.
 
 
-# Machine Learning Model
+## Machine Learning Model
 We apply Logistic Regression, Gradient Boosting Classfieir and Random Forest Classifier to our dataset. 
 
 We have developed and trained our model on the above classification methods.
