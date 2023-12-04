@@ -84,3 +84,45 @@ Athena - We make use of AWS Glue for ETL Transformations
 **AWS Pipeline:**
 
 ![image](https://github.com/carlsigiew/CreditCardApprovalCCDA/assets/25591822/0507f755-30f0-47a0-b5ad-162fb652e61e)
+
+## Phase 3 Deliverable 
+
+# Data Modelling
+For data pre processing, we have used AWS SageMaker to first find any missing values. 
+* After this, we convert categorical to numerical variables using label encoding. The columns converted are "CODE_GENDER", "FLAG_OWN_CAR", "FLAG_OWN_REALTY", "NAME_INCOME_TYPE", "NAME_EDUCATION_TYPE", "NAME_FAMILY_STATUS", "NAME_HOUSING_TYPE".
+* We also convert categorical variables in the occupation type column to numerical using a custom numbering format
+* Drop unnessessary columns
+* We convert the "STATUS" column from categorical to numerical and map to either 0 or 1 because it is a binary classification task where 
+* 1 includes users who took no loans that month paid within the month or 30 days past the due date while 
+* 0 includes users who pay within 30 to 149 days past the due date or have overdue debts for more than 150 days
+
+* After this, we merge the two files to create one comprehensive dataset.
+
+
+# Machine Learning Model
+We apply Logistic Regression, Gradient Boosting Classfieir and Random Forest Classifier to our dataset. 
+
+We have developed and trained our model on the above classification methods.
+
+We get an accuracy of 0.5674529534284114 for Logistic Regression which is the mean acccuracy of the model on the training data. The accuracy is usually between 0 and 1 where 0 is no accuracy and 1 is perfect accuracy. Therefore, the model correctly classified most of the training data.
+
+The Gradient Boosting Classifier gives an accuracy of 0.9944726943557706 for the training data. 
+
+Random Forest Classfier has an accuracy of 0.9999879990262067
+
+The models are evaluated on ROC AUC (Receiver Operating Characteristic Area Under the Curve), which is a performance metric that is used to evaluate the model's ability to distinguish between the positive and negative classes in binary classification tasks. The ROC AUC score ranges from 0 to 1, where 0 is poor prediction and 1 is perfect prediction.
+
+## Evaluation 
+
+The ROC AUC score for the Logistic Regression model is 0.57 which means the model is moderately accurate at prediction
+
+The ROC AUC score for the Random Forest Classfier is 0.85 which means the classifier is has high accuracy of prediction
+
+The ROC AUC score for the Gradient Boosting Classifier is 0.87 which means the classifier is has high accuracy of prediction. 
+
+The gradient boosting classifer has the highest ROC AUC score of the classifiers used and therefore is the best performing.\
+
+
+## Conclusion
+The ROC AUC score for the Gradient Boosting Classifier is the highest, so we will be moving forward with that model. However, we will need to keep building the model on newer data to keep up with current customer demographics to get a better prediction for current data rather than historical data. 
+
