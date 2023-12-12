@@ -138,7 +138,7 @@ The ROC AUC score for the Gradient Boosting Classifier is the highest, so we wil
 ![image](https://github.com/carlsigiew/CreditCardApprovalCCDA/assets/25591822/d1798b62-24b8-4898-9f94-6062b31049a9)
 
    
-Leveraging AWS Cost Explorer within our credit card approval prediction project workflow has proven instrumental in effective cost management. The insights gained have empowered us to make informed decisions, enabling us to:
+Leveraging AWS Cost Explorer within our credit card approval workflow has proven instrumental in effective cost management. The insights gained have empowered us to make informed decisions, enabling us to:
 
 1. **Analyze Expenditure Patterns:**
    - Visualizing expenses across various AWS services has been instrumental in identifying trends and high-expenditure areas, enhancing our understanding of resource utilization patterns specific to our credit card approval prediction workflow.
