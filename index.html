@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input Form</title>
+</head>
+<body>
+
+<h1>User Input Form</h1>
+
+<form id="userInputForm">
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+        <option value="0">Female</option>
+        <option value="1">Male</option>
+    </select><br><br>
+
+    <label for="ownCar">Own a Car:</label>
+    <select id="ownCar" name="ownCar">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select><br><br>
+
+    <label for="ownRealty">Own Realty:</label>
+    <select id="ownRealty" name="ownRealty">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select><br><br>
+
+    <label for="children">Number of Children:</label>
+    <input type="number" id="children" name="children" min="0"><br><br>
+
+    <label for="income">Annual Income:</label>
+    <input type="number" id="income" name="income" step="0.01" min="0"><br><br>
+
+    <label for="incomeType">Income Type:</label>
+    <select id="incomeType" name="incomeType">
+        <option value="0">Commercial associate</option>
+        <option value="1">Pensioner</option>
+        <option value="2">State servant</option>
+        <option value="3">Student</option>
+        <option value="4">Working</option>
+    </select><br><br>
+
+    <label for="educationType">Education Type:</label>
+    <select id="educationType" name="educationType">
+        <option value="0">Academic degree</option>
+        <option value="1">Higher education</option>
+        <option value="2">Incomplete higher education</option>
+        <option value="3">Lower secondary education</option>
+        <option value="4">Secondary/Secondary special education</option>
+    </select><br><br>
+
+    <label for="familyStatus">Family Status:</label>
+    <select id="familyStatus" name="familyStatus">
+        <option value="0">Civil marriage</option>
+        <option value="1">Married</option>
+        <option value="2">Separated</option>
+        <option value="3">Single/Not married</option>
+        <option value="4">Widow</option>
+    </select><br><br>
+
+    <label for="housingType">Housing Type:</label>
+    <select id="housingType" name="housingType">
+        <option value="0">Co-op apartment</option>
+        <option value="1">House / apartment</option>
+        <option value="2">Municipal apartment</option>
+        <option value="3">Office apartment</option>
+        <option value="4">Rented apartment</option>
+        <option value="5">With parents</option>
+    </select><br><br>
+
+    <label for="mobilePhone">Own a Mobile Phone:</label>
+    <select id="mobilePhone" name="mobilePhone">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select><br><br>
+
+    <label for="workPhone">Own a Work Phone:</label>
+    <select id="workPhone" name="workPhone">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select><br><br>
+
+    <label for="phone">Own a Phone:</label>
+    <select id="phone" name="phone">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select><br><br>
+
+    <label for="email">Have an Email:</label>
+    <select id="email" name="email">
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+    </select><br><br>
+
+    <label for="occupationType">Occupation Type:</label>
+    <select id="occupationType" name="occupationType">
+        <option value="0">Security staff</option>
+        <option value="1">Sales staff</option>
+        <option value="2">Accountants</option>
+        <option value="3">Laborers</option>
+        <option value="4">Managers</option>
+        <option value="5">Drivers</option>
+        <option value="6">Core staff</option>
+        <option value="7">High skill tech staff</option>
+        <option value="8">Cleaning staff</option>
+        <option value="9">Private service staff</option>
+        <option value="10">Cooking staff</option>
+        <option value="11">Low-skill Laborers</option>
+        <option value="12">Medicine staff</option>
+        <option value="13">Secretaries</option>
+        <option value="14">Waiters/barmen staff</option>
+        <option value="15">HR staff</option>
+        <option value="16">Realty agents</option>
+        <option value="17">IT staff</option>
+    </select><br><br>
+
+    <label for="familyCount">Number of Family Members:</label>
+    <input type="number" id="familyCount" name="familyCount" min="0"><br><br>
+
+
+    <button type="button" onclick="submitForm()">Submit</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+function submitForm() {
+    var gender = document.getElementById("gender").value;
+    var ownCar = document.getElementById("ownCar").value;
+    var ownRealty = document.getElementById("ownRealty").value;
+    var children = document.getElementById("children").value;
+    var income = document.getElementById("income").value;
+    var incomeType = document.getElementById("incomeType").value;
+    var educationType = document.getElementById("educationType").value;
+    var familyStatus = document.getElementById("familyStatus").value;
+    var housingType = document.getElementById("housingType").value;
+    var mobilePhone = document.getElementById("mobilePhone").value;
+    var workPhone = document.getElementById("workPhone").value;
+    var phone = document.getElementById("phone").value;
+    var email = document.getElementById("email").value;
+    var occupationType = document.getElementById("occupationType").value;
+    var familyCount = document.getElementById("familyCount").value;
+
+    var data = {
+        'Gender': parseInt(gender),
+        'Own_Car': parseInt(ownCar),
+        'Own_Realty': parseInt(ownRealty),
+        'Cnt_Children': parseInt(children),
+        'Income_Total': parseFloat(income),
+        'Income_Type': parseInt(incomeType),
+        'Education_Type': parseInt(educationType),
+        'Family_Status': parseInt(familyStatus),
+        'Housing_Type': parseInt(housingType),
+        'Mobile_Phone': parseInt(mobilePhone),
+        'Work_Phone': parseInt(workPhone),
+        'Phone': parseInt(phone),
+        'Email': parseInt(email),
+        'Occupation_Type': parseInt(occupationType),
+        'Cnt_Family': parseInt(familyCount),
+        'monthsBalance': -1
+    };
+
+    var jsonStr = JSON.stringify({'feature': Object.values(data)});
+
+    // Display the JSON string on the page
+    // document.getElementById("result").innerHTML = "<strong>JSON String:</strong><br>" + jsonStr;
+    
+    fetch("https://pjqdfk8lc8.execute-api.us-east-1.amazonaws.com/dev/", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json', },
+        body: jsonStr
+    }).then(res => {
+        console.log(res);
+        if(res.ok) {
+           return res.json()
+        }
+    }).then(data => {
+        console.log(data.prediction);
+
+        if(data.prediction == "[1]") {
+            alert("You have been accepted! Your credit limit will come in a mail in 14 working days! Thank you ")
+        } else {
+            alert("Unfortunately, we can not give you the credit card right now. Please apply again in 6 months")
+        }
+    }).catch(err => {
+        console.log(err);
+    })
+}
+</script>
+
+</body>
+</html>
