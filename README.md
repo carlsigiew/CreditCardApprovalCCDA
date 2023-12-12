@@ -132,3 +132,27 @@ The gradient boosting classifer has the highest ROC AUC score of the classifiers
 ## Conclusion
 The ROC AUC score for the Gradient Boosting Classifier is the highest, so we will be moving forward with that model. However, we will need to keep building the model on newer data to keep up with current customer demographics to get a better prediction for current data rather than historical data. 
 
+
+# Phase 4 Deliverable
+## Cost Analysis
+![image](https://github.com/carlsigiew/CreditCardApprovalCCDA/assets/25591822/d1798b62-24b8-4898-9f94-6062b31049a9)
+
+   
+Leveraging AWS Cost Explorer within our credit card approval prediction project workflow has proven instrumental in effective cost management. The insights gained have empowered us to make informed decisions, enabling us to:
+
+1. **Analyze Expenditure Patterns:**
+   - Visualizing expenses across various AWS services has been instrumental in identifying trends and high-expenditure areas, enhancing our understanding of resource utilization patterns specific to our credit card approval prediction workflow.
+
+2. **Optimize Resource Allocation:**
+   - By employing Cost Explorer to filter and group costs, we have optimized our resource allocation strategies, facilitating better decision-making and ensuring efficient utilization of resources tailored to the demands of our credit card approval prediction model.
+
+3. **Implement Cost Optimization Strategies:**
+   - Actively leveraging the recommendations provided by Cost Explorer, we have executed impactful changes such as rightsizing instances. This strategic approach has resulted in notable cost reductions without compromising the performance of our credit card approval prediction system.
+
+4. **Track Progress and Budgets:**
+   - Utilizing Cost Explorer's budgeting tools, we have set thresholds and established alerts, ensuring proactive monitoring of expenses to maintain operational efficiency within predefined budgetary limits.
+
+5. **Ensure Continuous Enhancement:**
+   - Regular reviews using Cost Explorer have become an integral part of our cost management practices. This ongoing process enables us to adapt spending habits, align resources more efficiently, and ensure continuous improvement in the cost-effectiveness of our credit card approval prediction project.
+    - Continuously optimize your resources to ensure cost-effectiveness without compromising performance.
+
